@@ -27,7 +27,6 @@ if len(data_list)==3 :#если есть все три элемента даты
         else:#для високосного
             del days['31']
             del days['30']
-
     #теперь выводим ответ
     if data_list[0] in days.keys() and data_list[1] in months.keys():
         print(days[data_list[0]], months[data_list[1]],data_list[2],'года')
