@@ -9,10 +9,14 @@ my_list_1 = [2, 2, 5, 12, 8, 2, 12]
 """
 my_list = [2, 2, 5, 12, 8, 2, 12, 24, 24, 4, 5, 56, 56]
 my_list_new=[]
+# for i in range(len(my_list)):
+#     for j in range(len(my_list)):
+#         if i != j and my_list[i] == my_list[j]:
+#             break
+#     else:
+#         my_list_new.append(my_list[i])
+#print(my_list_new)
 for i in range(len(my_list)):
-    for j in range(len(my_list)):
-        if i != j and my_list[i] == my_list[j]:
-            break
-    else:
+    if my_list.count(my_list[i])==1 :
         my_list_new.append(my_list[i])
 print(my_list_new)
