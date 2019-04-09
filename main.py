@@ -13,4 +13,4 @@ print(rd.rand_el(char_list))
 print(rd.rand_el(emp_list))
 
 dr.create_dir()
-#dr.del_dir()
+dr.del_dir()
